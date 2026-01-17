@@ -5,36 +5,74 @@
 //
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
-// [
-//   {
-//     "context": "Workspace",
-//     "bindings": {
-//       // "shift shift": "file_finder::Toggle"
-//     },
-//   },
-//   {
-//     "context": "Editor && vim_mode == insert",
-//     "bindings": {
-//       // "j k": "vim::NormalBefore"
-//     },
-//   },
-// ]
 [
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
+      "space e": "project_panel::ToggleFocus",
+      "shift i": "project_panel::ToggleHideHidden",
       "space f f": "file_finder::Toggle",
       "space s g": "pane::DeploySearch",
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "space shift-x": "workspace::CloseInactiveTabsAndPanes",
+      "space v": "pane::SplitRight",
+      "space h": "pane::SplitDown",
+      "space o": "projects::OpenRecent",
+    },
+  },
+  // { "context": "Editor && vim_mode == insert", "bindings": { "j k": "vim::NormalBefore" }, },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "tab": "editor::ContextMenuNext",
+      "shift-tab": "editor::ContextMenuPrevious",
     },
   },
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "menu",
     "bindings": {
-      "j k": "vim::NormalBefore",
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
     },
   },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space o": "projects::OpenRecent",
+      "space a": "workspace::AddFolderToProject",
+      "ctrl-n": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "space q": "pane::CloseActiveItem",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePreviousItem",
+    },
+  },
+  {
+    "context": "Dock || Terminal || Editor || ProjectPanel",
+    "bindings": {
+      "ctrl-h": [
+        "workspace::ActivatePaneInDirection",
+        "Left"
+      ],
+      "ctrl-l": [
+        "workspace::ActivatePaneInDirection",
+        "Right"
+      ],
+      "ctrl-k": [
+        "workspace::ActivatePaneInDirection",
+        "Up"
+      ],
+      "ctrl-j": [
+        "workspace::ActivatePaneInDirection",
+        "Down"
+      ]
+    }
+  }
 ]

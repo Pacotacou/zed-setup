@@ -7,9 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "prettier": {
+    "allowed": false
+  },
   "format_on_save": "on",
   // "formatter": "language_server",
   "gutter": {
+    "runnables": true,
     "breakpoints": true,
     "line_numbers": true,
   },

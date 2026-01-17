@@ -18,6 +18,9 @@
       "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-k": "workspace::ActivatePaneUp",
       "space shift-x": "workspace::CloseInactiveTabsAndPanes",
+      "space v": "pane::SplitRight",
+      "space h": "pane::SplitDown",
+      "space o": "projects::OpenRecent",
     },
   },
   // { "context": "Editor && vim_mode == insert", "bindings": { "j k": "vim::NormalBefore" }, },
@@ -46,7 +49,18 @@
   {
     "context": "Pane",
     "bindings": {
-      "space x": "pane::CloseActiveItem",
+      "space q": "pane::CloseActiveItem",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePreviousItem",
     },
   },
+  {
+    "context": "Dock || Terminal || Editor || ProjectPanel",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
+    }
+  }
 ]
