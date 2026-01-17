@@ -7,15 +7,18 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "inlay_hints": {
+    "enabled": true
+  },
   "prettier": {
     "allowed": false
   },
   "format_on_save": "on",
   // "formatter": "language_server",
   "gutter": {
-    "runnables": true,
-    "breakpoints": true,
-    "line_numbers": true,
+    "runnables": false,
+    "breakpoints": false,
+    "line_numbers": false,
   },
   "toolbar": {
     "selections_menu": true,

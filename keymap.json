@@ -9,8 +9,9 @@
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
+      "space i": "editor::ToggleInlayHints",
+      "space n": "editor::ToggleLineNumbers",
       "space e": "project_panel::ToggleFocus",
-      "shift i": "project_panel::ToggleHideHidden",
       "space f f": "file_finder::Toggle",
       "space s g": "pane::DeploySearch",
       "ctrl-h": "workspace::ActivatePaneLeft",
@@ -20,22 +21,22 @@
       "space shift-x": "workspace::CloseInactiveTabsAndPanes",
       "space v": "pane::SplitRight",
       "space h": "pane::SplitDown",
-      "space o": "projects::OpenRecent",
+      "space o": "workspace::Open",
     },
   },
   // { "context": "Editor && vim_mode == insert", "bindings": { "j k": "vim::NormalBefore" }, },
-  {
-    "context": "Editor && (showing_code_actions || showing_completions)",
-    "bindings": {
-      "tab": "editor::ContextMenuNext",
-      "shift-tab": "editor::ContextMenuPrevious",
-    },
-  },
   {
     "context": "menu",
     "bindings": {
       "j": "menu::SelectNext",
       "k": "menu::SelectPrevious",
+    },
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "tab": "editor::ContextMenuNext",
+      "shift-tab": "editor::ContextMenuPrevious",
     },
   },
   {
@@ -61,6 +62,29 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      // Basic Navigation
+      "h": "project_panel::CollapseSelectedEntry",
+      "l": "project_panel::ExpandSelectedEntry",
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      // File Management (NvChad Style)
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      // Open Actions
+      // "enter": "project_panel::Open",
+      // "shift-enter": "project_panel::OpenPermanent",
+      "v": "project_panel::OpenSplitVertical",
+      "s": "project_panel::OpenSplitHorizontal",
     }
   }
 ]
