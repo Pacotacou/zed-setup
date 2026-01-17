@@ -1,0 +1,52 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "space e": "project_panel::ToggleFocus",
+      "shift i": "project_panel::ToggleHideHidden",
+      "space f f": "file_finder::Toggle",
+      "space s g": "pane::DeploySearch",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "space shift-x": "workspace::CloseInactiveTabsAndPanes",
+    },
+  },
+  // { "context": "Editor && vim_mode == insert", "bindings": { "j k": "vim::NormalBefore" }, },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "tab": "editor::ContextMenuNext",
+      "shift-tab": "editor::ContextMenuPrevious",
+    },
+  },
+  {
+    "context": "menu",
+    "bindings": {
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space o": "projects::OpenRecent",
+      "space a": "workspace::AddFolderToProject",
+      "ctrl-n": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "space x": "pane::CloseActiveItem",
+    },
+  },
+]
