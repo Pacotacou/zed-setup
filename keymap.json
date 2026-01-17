@@ -67,6 +67,7 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
+      "ctrl-n": "workspace::ToggleLeftDock",
       // Basic Navigation
       "h": "project_panel::CollapseSelectedEntry",
       "l": "project_panel::ExpandSelectedEntry",
