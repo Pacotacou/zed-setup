@@ -10,6 +10,11 @@
   "inlay_hints": {
     "enabled": true
   },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
   "prettier": {
     "allowed": false
   },
@@ -47,7 +52,7 @@
   "icon_theme": {
     "mode": "system",
     "light": "Zed (Default)",
-    "dark": "Material Icon Theme",
+    "dark": "Colored Zed Icons Theme Dark",
   },
   "project_panel": {
     "button": true,

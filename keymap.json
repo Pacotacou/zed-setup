@@ -21,7 +21,7 @@
       "space shift-x": "workspace::CloseInactiveTabsAndPanes",
       "space v": "pane::SplitRight",
       "space h": "pane::SplitDown",
-      "space o": "workspace::Open",
+      "space o": "workspace::Open"
     },
   },
   // { "context": "Editor && vim_mode == insert", "bindings": { "j k": "vim::NormalBefore" }, },
@@ -29,31 +29,28 @@
     "context": "menu",
     "bindings": {
       "j": "menu::SelectNext",
-      "k": "menu::SelectPrevious",
-    },
+      "k": "menu::SelectPrevious"
+    }
   },
   {
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
       "tab": "editor::ContextMenuNext",
-      "shift-tab": "editor::ContextMenuPrevious",
-    },
+      "shift-tab": "editor::ContextMenuPrevious"
+    }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "space o": "projects::OpenRecent",
-      "space a": "workspace::AddFolderToProject",
-      "ctrl-n": "workspace::ToggleLeftDock",
-    },
+      "ctrl-p": "workspace::Open",
+      "ctrl-n": "workspace::ToggleLeftDock"
+    }
   },
   {
-    "context": "Pane",
+    "context": "Pane && !menu && VimControl",
     "bindings": {
       "space q": "pane::CloseActiveItem",
-      "shift-l": "pane::ActivateNextItem",
-      "shift-h": "pane::ActivatePreviousItem",
-    },
+    }
   },
   {
     "context": "Dock || Terminal || Editor || ProjectPanel",
@@ -85,7 +82,7 @@
       // "enter": "project_panel::Open",
       // "shift-enter": "project_panel::OpenPermanent",
       "v": "project_panel::OpenSplitVertical",
-      "s": "project_panel::OpenSplitHorizontal",
+      "s": "project_panel::OpenSplitHorizontal"
     }
   }
 ]
