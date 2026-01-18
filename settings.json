@@ -7,6 +7,14 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "zed",
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
   "scrollbar": {
     "axes": {
       "vertical": false,
@@ -14,10 +22,11 @@
     },
   },
   "languages": {
-    "TSX": {
-      "use_autoclose": true,
-      "colorize_brackets": true,
-    },
+    "JSON": { "prettier": { "allowed": true } },
+    "Markdown": { "prettier": { "allowed": true } },
+    "HTML": { "prettier": { "allowed": true } },
+    "JavaScript": { "prettier": { "allowed": true } },
+    "TSX": { "use_autoclose": true, "colorize_brackets": true },
   },
   "inlay_hints": {
     "enabled": true,
@@ -27,9 +36,7 @@
       "enabled": true,
     },
   },
-  "prettier": {
-    "allowed": true,
-  },
+  // "prettier": { "allowed": true, },
   "format_on_save": "on",
   // "formatter": "language_server",
   "gutter": {

@@ -9,6 +9,7 @@
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
+      "space r": "editor::Rename",
       "space i": "editor::ToggleInlayHints",
       "space n": "editor::ToggleLineNumbers",
       "space e": "project_panel::ToggleFocus",
