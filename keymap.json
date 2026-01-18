@@ -33,30 +33,30 @@
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
     "bindings": {
       "space s": "vim::PushAddSurrounds",
-      "space S": "vim::PushChangeSurrounds"
-    }
-  }
+      "space S": "vim::PushChangeSurrounds",
+    },
+  },
   // { "context": "Editor && vim_mode == insert", "bindings": { "j k": "vim::NormalBefore" }, },
   {
     "context": "menu",
     "bindings": {
       "j": "menu::SelectNext",
-      "k": "menu::SelectPrevious"
-    }
+      "k": "menu::SelectPrevious",
+    },
   },
   {
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
       "tab": "editor::ContextMenuNext",
-      "shift-tab": "editor::ContextMenuPrevious"
-    }
+      "shift-tab": "editor::ContextMenuPrevious",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
       "ctrl-p": "workspace::Open",
-      "ctrl-n": "workspace::ToggleLeftDock"
-    }
+      "ctrl-n": "workspace::ToggleLeftDock",
+    },
   },
   // { "context": "Pane && !menu && VimControl", "bindings": { "space q": "pane::CloseActiveItem", } },
   {
@@ -65,8 +65,8 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
   },
   {
     "context": "ProjectPanel && not_editing",
@@ -89,7 +89,7 @@
       // "enter": "project_panel::Open",
       // "shift-enter": "project_panel::OpenPermanent",
       "v": "project_panel::OpenSplitVertical",
-      "s": "project_panel::OpenSplitHorizontal"
-    }
-  }
+      "s": "project_panel::OpenSplitHorizontal",
+    },
+  },
 ]
