@@ -7,23 +7,35 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "scrollbar": {
+    "axes": {
+      "vertical": false,
+      "horizontal": false,
+    },
+  },
+  "languages": {
+    "TSX": {
+      "use_autoclose": true,
+      "colorize_brackets": true,
+    },
+  },
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
   },
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "prettier": {
-    "allowed": false
+    "allowed": true,
   },
   "format_on_save": "on",
   // "formatter": "language_server",
   "gutter": {
     "runnables": false,
     "breakpoints": false,
-    "line_numbers": false,
+    "line_numbers": true,
   },
   "toolbar": {
     "selections_menu": true,

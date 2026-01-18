@@ -21,9 +21,21 @@
       "space shift-x": "workspace::CloseInactiveTabsAndPanes",
       "space v": "pane::SplitRight",
       "space h": "pane::SplitDown",
-      "space o": "workspace::Open"
+      "space o": "workspace::Open",
+      "space q": "pane::CloseActiveItem",
+      "space d": "editor::GoToDiagnostic",
+      "space w": "editor::ToggleSoftWrap",
+      // "space s": "vim::PushAddSurrounds",
+      // "space S": "vim::PushChangeSurrounds",
     },
   },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      "space s": "vim::PushAddSurrounds",
+      "space S": "vim::PushChangeSurrounds"
+    }
+  }
   // { "context": "Editor && vim_mode == insert", "bindings": { "j k": "vim::NormalBefore" }, },
   {
     "context": "menu",
@@ -46,12 +58,7 @@
       "ctrl-n": "workspace::ToggleLeftDock"
     }
   },
-  {
-    "context": "Pane && !menu && VimControl",
-    "bindings": {
-      "space q": "pane::CloseActiveItem",
-    }
-  },
+  // { "context": "Pane && !menu && VimControl", "bindings": { "space q": "pane::CloseActiveItem", } },
   {
     "context": "Dock || Terminal || Editor || ProjectPanel",
     "bindings": {
