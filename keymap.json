@@ -26,6 +26,7 @@
       "space q": "pane::CloseActiveItem",
       "space d": "editor::GoToDiagnostic",
       "space w": "editor::ToggleSoftWrap",
+      "z o": "editor::ToggleFold",
       // "space s": "vim::PushAddSurrounds",
       // "space S": "vim::PushChangeSurrounds",
     },
