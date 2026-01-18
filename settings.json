@@ -29,7 +29,7 @@
     "TSX": { "use_autoclose": true, "colorize_brackets": true },
   },
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
   },
   "diagnostics": {
     "inline": {
