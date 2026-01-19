@@ -9,6 +9,7 @@
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
+      "space o": "outline::Toggle",
       "space r": "editor::Rename",
       "space i": "editor::ToggleInlayHints",
       "space n": "editor::ToggleLineNumbers",
@@ -22,7 +23,6 @@
       "space shift-x": "workspace::CloseInactiveTabsAndPanes",
       "space v": "pane::SplitRight",
       "space h": "pane::SplitDown",
-      "space o": "workspace::Open",
       "space q": "pane::CloseActiveItem",
       "space d": "editor::GoToDiagnostic",
       "space w": "editor::ToggleSoftWrap",
@@ -92,6 +92,9 @@
       // "shift-enter": "project_panel::OpenPermanent",
       "v": "project_panel::OpenSplitVertical",
       "s": "project_panel::OpenSplitHorizontal",
+      "shift-i": "project_panel::ToggleHideHidden",
+      "ctrl-c": "workspace::CopyRelativePath",
+      "ctrl-C": "workspace::CopyPath",
     },
   },
 ]
