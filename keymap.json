@@ -9,6 +9,7 @@
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
+      "space t": "workspace::NewTerminal",
       "space o": "outline::Toggle",
       "space r": "editor::Rename",
       "space i": "editor::ToggleInlayHints",
@@ -95,6 +96,13 @@
       "shift-i": "project_panel::ToggleHideHidden",
       "ctrl-c": "workspace::CopyRelativePath",
       "ctrl-C": "workspace::CopyPath",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-h": "pane::ActivatePreviousItem",
+      "ctrl-l": "pane::ActivateNextItem",
     },
   },
 ]
