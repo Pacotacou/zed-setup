@@ -42,10 +42,7 @@
   // { "context": "Editor && vim_mode == insert", "bindings": { "j k": "vim::NormalBefore" }, },
   {
     "context": "menu",
-    "bindings": {
-      "j": "menu::SelectNext",
-      "k": "menu::SelectPrevious",
-    },
+    // "bindings": { "j": "menu::SelectNext", "k": "menu::SelectPrevious", },
   },
   {
     "context": "Editor && (showing_code_actions || showing_completions)",
@@ -74,7 +71,9 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
+      "space t": "terminal_panel::ToggleFocus",
       "ctrl-n": "workspace::ToggleLeftDock",
+      "space f f": "file_finder::Toggle",
       // Basic Navigation
       "h": "project_panel::CollapseSelectedEntry",
       "l": "project_panel::ExpandSelectedEntry",
