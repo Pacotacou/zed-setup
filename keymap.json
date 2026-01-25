@@ -10,6 +10,8 @@
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
       "space t": "workspace::NewTerminal",
+      // "space t h": "terminal_panel::Toggle",
+      "ctrl-b": "terminal_panel::Toggle",
       "space o": "outline::Toggle",
       "space r": "editor::Rename",
       "space i": "editor::ToggleInlayHints",
@@ -102,6 +104,7 @@
     "bindings": {
       "ctrl-h": "pane::ActivatePreviousItem",
       "ctrl-l": "pane::ActivateNextItem",
+      "ctrl-b": "terminal_panel::Toggle",
     },
   },
 ]
