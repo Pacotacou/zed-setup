@@ -14,16 +14,16 @@
   "bottom_dock_layout": "contained",
   "preview_tabs": {
     "enable_preview_multibuffer_from_code_navigation": false,
-    "enable_preview_from_file_finder": true
+    "enable_preview_from_file_finder": true,
   },
   "debugger": {
-    "button": true
+    "button": true,
   },
   "search": {
-    "button": true
+    "button": true,
   },
   "completions": {
-    "lsp_insert_mode": "replace_suffix"
+    "lsp_insert_mode": "replace_suffix",
   },
   "remove_trailing_whitespace_on_save": true,
   "use_autoclose": true,
@@ -88,7 +88,8 @@
     "show_project_items": true,
     "show_branch_icon": true,
   },
-  "buffer_font_family": "Mononoki Nerd Font",
+  // "buffer_font_family": "Mononoki Nerd Font",
+  "buffer_font_family": "ZedMono Nerd Font",
   "icon_theme": {
     "mode": "system",
     "light": "Zed (Default)",
